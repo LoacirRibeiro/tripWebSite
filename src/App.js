@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+
+
+// Create Travel and Stay Website Using ReactJS | Fully Responsive Project 2024.
+import React from 'react';
 import './App.css';
+import Navbar from './Components/Navbar/navbar';
+import Home from './Components/Home/home';
+import Popular from './Components/Popular/popular';
+import Oferta from './Components/Ofertas/oferta';
+import Sobre from './Components/Sobre/sobre';
+import Blog from './Components/Blog/blog';
+import Footer from './Components/Footer/footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Home />
+      <Popular />
+      <Oferta />
+      <Sobre />
+      <Blog />
+      <Footer />
     </div>
   );
 }

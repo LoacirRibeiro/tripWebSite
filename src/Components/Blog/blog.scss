@@ -1,0 +1,84 @@
+:root{
+    --PrimaryColor: hsl(26, 93%, 50%);
+    --HoverColor: hsl(26, 90%, 42%);
+    --WhiteColor: hsl(0, 0%, 100%);
+    --BlackColor: hsl(0, 0%, 18%);
+    --TextColor: hsl(240, 1%, 48%);
+    --WhiteColorDeam: hsl(0, 0%, 93%);
+    --GreyBg: hsl(0, 0%, 96%);
+    --Greytext: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+    --boxShedow: box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334);
+}
+
+.blog{
+    .mainContainer{
+        gap: 1rem;
+
+        .singlePost{
+            gap: 2rem;
+
+            .imgDiv{
+                height: 180px;
+                width: 100%;
+                border-radius: 1rem;
+                border: 5px solid var(--GreyBg);
+                box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.406);
+                overflow: hidden;
+                object-fit: cover;
+
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                        transition: 3s ease;
+                    }
+                }
+
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .postDetails{
+                h3{
+                    color: var(--BlackColor);
+                    font-weight: 600;
+                    padding-bottom: 10px;
+                }
+
+                p{
+                    font-size: 13;
+                    color: var(--TextColor);
+                    font-weight: 500;
+                }               
+            }
+
+            a{
+                font-size: 15px;
+                color: var(--PrimaryColor);
+                font-size: 600;
+                padding-top: .5rem;
+                width: max-content;
+                &:hover{
+                    color: var(--HoverColor);
+                    font-weight: 600;
+                    
+                    .icon{
+                        transform: translateX(10px);
+                    }
+                }    
+            }
+        }
+    }
+}
+
+// MEDIA QUERIES==================
+
+@media screen and (min-width: 884px){
+    .blog{
+        .mainContainer{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
