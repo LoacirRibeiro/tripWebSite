@@ -58,7 +58,7 @@ function Blog() {
                     {
                         posts.map(({id, postImage, title, desc}) =>{
                             return(
-                                <div className="singlePost grid">
+                                <div  key={id} className="singlePost grid">
                                     <div className="imgDiv">
                                         <img src={postImage} alt={title}></img>
                                     </div>
@@ -72,7 +72,7 @@ function Blog() {
                                         </p>
                                     </div>
 
-                                    <Link className="flex">
+                                    <Link to='/' className="flex">
                                         Mais informações
                                         <BsArrowRightShort className="icon" />
                                     </Link>

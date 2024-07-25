@@ -40,7 +40,7 @@ function Navbar() {
             <div className={transparent}>
 
                 <div className="logoDiv">
-                    <Link className="logo">
+                    <Link to='/' className="logo">
                         <h1 className="flex"><BiSwim className="icon"/>
                             Dot
                         </h1>
@@ -51,43 +51,43 @@ function Navbar() {
                     <ul className="navLists flex">
 
                         <li className="navItem">
-                            <Link className="navLink">
+                            <Link to='/' className="navLink">
                                 Home
                             </Link>
                         </li>
 
                         <li className="navItem">
-                            <Link className="navLink">
+                            <Link to='/' className="navLink">
                                 Produtos
                             </Link>
                         </li>
 
                         <li className="navItem">
-                            <Link className="navLink">
+                            <Link to='/' className="navLink">
                                 Recursos
                             </Link>
                         </li>
 
                         <li className="navItem">
-                            <Link className="navLink">
+                            <Link to='/' className="navLink">
                                 Contato
                             </Link>
                         </li>
 
                         <li className="navItem">
-                            <Link className="navLink">
+                            <Link to='/blog' className="navLink">
                                 Blog
                             </Link> 
                         </li>
 
                         <div className="headerBtns flex">
                             <button className="btn loginBtn">
-                                <Link>
+                                <Link to='/' >
                                     Login
                                 </Link>
                             </button>
                             <button className="btn ">
-                                <Link>
+                                <Link to='/' >
                                     Inscreva-se
                                 </Link>
                             </button>

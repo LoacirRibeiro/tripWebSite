@@ -60,7 +60,7 @@ function Oferta() {
                     {
                         Offers.map(({id, imgSrc, destTitle, location, price}) =>{
                             return(
-                                <div className="singleOffer">
+                                <div  key={id} className="singleOffer">
                                     <div className="destImage">
                                     <img src={imgSrc} alt={destTitle} />
 

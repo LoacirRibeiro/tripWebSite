@@ -14,7 +14,7 @@ function Footer() {
       <div className="secContainer container grid">
         <div className="logoDiv">
           <div className="footerLogo">
-            <Link>
+            <Link to='/' >
               <h1 className="flex">
                 <BiSwim className="icon" />
                 Dot
@@ -32,22 +32,22 @@ function Footer() {
         <div className="footerLinks">
           <span className="linkTitle">Informações</span>
           <li>
-            <Link>
+            <Link to='/' >
               Home 
             </Link>
           </li>
           <li>
-            <Link>
+            <Link to='/' >
               Explore 
             </Link>
           </li>
           <li>
-            <Link>
+            <Link to='/' >
               Viagens 
             </Link>
           </li>
           <li>
-            <Link>
+            <Link to='/blog' >
               Blog 
             </Link>
           </li>
@@ -56,22 +56,22 @@ function Footer() {
         <div className="footerLinks">
           <span className="linkTitle">Links úteis</span>
           <li>
-            <Link>
+            <Link to='/' >
               Destination 
             </Link>
           </li>
           <li>
-            <Link>
+            <Link to='/' >
               Suporte
             </Link>
           </li>
           <li>
-            <Link>
+            <Link to='/' >
               Viagens & Condições 
             </Link>
           </li>
           <li>
-            <Link>
+            <Link to='/' >
               Privacidade 
             </Link>
           </li>

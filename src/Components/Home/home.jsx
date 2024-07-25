@@ -29,7 +29,7 @@ function Home() {
                     </p>
 
                     <button data-aos='fade-up' data-aos-duration='2500' className="btn">
-                        <Link>
+                        <Link to='/blog' >
                             Explorar
                         </Link>
                     </button>

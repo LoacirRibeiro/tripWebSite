@@ -66,7 +66,7 @@ function Popular() {
         <div className="mainContent grid">
           {Data.map(({id, imgSrc, destTitle, location, grade}) => {
             return (
-              <div className="singleDestination">
+              <div key={id} className="singleDestination">
                 <div className="destImage">
                   <img src={imgSrc} alt="" />
 
